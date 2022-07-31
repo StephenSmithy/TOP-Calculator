@@ -26,6 +26,7 @@ body {
     text-align: right;
     vertical-align: bottom;
     padding: 0px 10px 0px 10px;
+    border-radius: 10px;
 }
 
 .row1, .row2, .row3, .row4, .row5{
@@ -35,9 +36,30 @@ body {
 .wideButton{
    width:140px;
    margin: 5px;
+   border-radius: 140px;
 }
 
 .button {
     width:40px;
     margin: 5px;
+    border-radius: 40px;
 }
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  .shake {
+    animation: shake 0.5s;
+    animation-iteration-count:2;
+  }
