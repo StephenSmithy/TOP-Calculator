@@ -1,0 +1,43 @@
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+}
+
+.calculator {
+    display:flex;
+    flex-direction: column;
+    height: 250px;
+    width: 200px;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.screen {
+    background-color: black;
+    flex: 1;
+    color: white;
+    font-size: 72px;
+    text-align: right;
+    vertical-align: bottom;
+    padding: 0px 10px 0px 10px;
+}
+
+.row1, .row2, .row3, .row4, .row5{
+    display:flex;
+}
+
+.wideButton{
+   width:140px;
+   margin: 5px;
+}
+
+.button {
+    width:40px;
+    margin: 5px;
+}
